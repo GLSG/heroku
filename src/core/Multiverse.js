@@ -284,30 +284,8 @@ this.newStage = 2;
       language: "en",
     }
     this.language = "en";
-    return;
-    var create = function() {
-      this.newStage = 1;
-      this.writeTitle();
-      console.log("[OgarUL] Welcome to Ogar Unlimited!");
-      console.log("[OgarUl] We sensed that this is your first time! Welcome! Thank you for choosing OgarUL!");
-      console.log("[OgarUl] First, let us show you around a bit...");
-      console.log("[OgarUl] Press the ENTER key (or type N and press enter to skip tutorial)");
-    }.bind(this);
-    try {
-  var data = fs.readFileSync(__dirname + '/../info.json', "utf8");
-    data = JSON.parse(data);
-this.data = data;
-    this.language = data.language;
-    if (!this.language) {
-create();
-return false;
-}
-    console.log("[Console] Language " + this.language + " Selected");
-    return true;
-    } catch (e) {
-      create()
-    }
-    
+    return true
+
   }
   start() {
     
