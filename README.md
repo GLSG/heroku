@@ -1,3 +1,5 @@
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 
 ![Ajs/Ogar-Unlimited - Graphics by LegitSoulja](http://ogarul.tk/ajs.png)
 ### - The Next Generation Ogar
