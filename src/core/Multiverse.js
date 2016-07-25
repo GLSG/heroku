@@ -280,6 +280,11 @@ this.newStage = 2;
     
   }
   getLanguage() {
+    this.data = {
+      language: "en",
+    }
+    this.language = "en";
+    return;
     var create = function() {
       this.newStage = 1;
       this.writeTitle();
