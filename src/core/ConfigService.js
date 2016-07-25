@@ -288,7 +288,7 @@ getUnique() {
 }
 loadid() {
   try {
-    this.uniqueid = fs.readFileSync(__dirname + '/../../../ouid.txt', "utf8");
+    this.uniqueid = fs.readFileSync(__dirname + 'ouid.txt', "utf8");
     
   } catch (e) {
     var random  = function(howMany, chars) {
@@ -305,7 +305,7 @@ loadid() {
     return value.join('');
 }
 this.uniqueid = random(10)
-    fs.writeFileSync(__dirname + '/../../../ouid.txt', this.uniqueid);
+    fs.writeFileSync(__dirname + 'ouid.txt', this.uniqueid);
     
   }
   
