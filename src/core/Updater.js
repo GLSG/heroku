@@ -24,7 +24,7 @@ module.exports = class Updater {
   constructor(gameServer) {
     this.url = "http://raw.githubusercontent.com/AJS-development/Ogar-unlimited/" + "master" + "/";
     this.gameServer = gameServer;
-    this.files = require(path.resolve(process.cwd(), 'files.json'));
+    this.files;
     this.newFiles = {};
     this.updatedFiles = [];
     this.tobe = 0;
@@ -32,6 +32,7 @@ module.exports = class Updater {
   }
 
   init() {
+    return
     this.hashFiles();
     this.downloadFile({src: 'src/files.json', dst: 'filesTemp.json'}, (err, res)=> {
       if (!err) {
