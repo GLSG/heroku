@@ -18,8 +18,10 @@ The AJS Dev Team.
 // among our processes.
 const Cell = require('../entity/Cell.js');
 const SortedMap = require("collections/fast-map");
+const QuadMap = require("QuadMap")
 
-'use strict';
+
+
 module.exports = class WorldModel {
   constructor(borderRight, borderLeft, borderBottom, borderTop) {
     this.borderRight = borderRight;
@@ -28,7 +30,7 @@ module.exports = class WorldModel {
     this.borderTop = borderTop;
    
     this.lastNodeId = 2;    // todo why 2?
-    this.nodes = new SortedMap();
+    this.nodes = new QuadMap(borderBottom,borderTop,borderLeft,borderRight);
     
     this.quadMap = {
       1: [],
