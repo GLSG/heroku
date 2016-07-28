@@ -229,7 +229,7 @@ module.exports = class PlayerTracker {
     this.color.r = color.r;
     this.color.b = color.b;
     this.color.g = color.g;
-  };
+  }; 
 
   getTeam() {
     return this.team;
@@ -601,12 +601,18 @@ getQuadrant(gameServer) { // Players quads are different and also factor in thei
     this.viewBox.rightX = this.centerPos.x + this.sightRangeX;
     this.viewBox.width = this.sightRangeX;
     this.viewBox.height = this.sightRangeY;
-
+var box = {
+ top: this.viewBox.bottomY, 
+  bottom: this.viewBox.topY,
+  left: this.viewBox.leftX,
+  right: this.viewBox.rightX
+  
+}
+var quad = this.gameServer.getWorld().getNodes().getQuadBox(box)
+var nodes = quad.getNodes(true)
     var newVisible = [];
-var quad = this.getQuadrant(this.gameServer);
-    this.gameServer.getWorld().getNodes().forEach((node)=> {
+    nodes.forEach((node)=> {
       if (!node) return;
-if (quad && quad != node.quadrant) return; // if players quad is different, skip.
       if (node.visibleCheck(this.viewBox, this.centerPos)) {
         // Cell is in range of viewBox
  if ((!node.watch || node.watch == -1) && !this.isBot) node.watch = this.pID;
