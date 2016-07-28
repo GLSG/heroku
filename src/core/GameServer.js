@@ -1199,7 +1199,7 @@ getChatName(player) {
     let squareR = cell.getSquareSize(); // Get cell squared radius
 
     // Loop through all cells that are visible to the cell. There is probably a more efficient way of doing this but whatever
-    cell.QTree.getNodes().forEach((check)=> {
+    cell.QTree.getNodes(true).forEach((check)=> {
       // exist?
       // if something already collided with this cell, don't check for other collisions
       // Can't eat itself
