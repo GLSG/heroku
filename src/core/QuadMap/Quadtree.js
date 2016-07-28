@@ -33,7 +33,9 @@ this.allnodes = new FastMap();
 this.allNodes = new FastMap();
 this.vars = (vars) ? vars : [];
 }
-
+some(c) {
+ return this.nodes.some(c)
+}
 clearVar(a) {
  if (this.level != 0) this[a].clear()
  this.quads.forEach((quad)=>{
