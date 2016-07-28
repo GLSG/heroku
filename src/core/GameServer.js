@@ -1278,9 +1278,9 @@ getChatName(player) {
   var rightX = cell.position.x + r;
   // Loop through all viruses on the map. There is probably a more efficient way of doing this but whatever
   
-  this.getWorld().getNodes('virus').every((check)=>{
+  cell.QTree.virusNodes.getNodes(true).every((check)=>{
    
-if (check.quadrant != cell.quadrant || !check) return true;
+if (!check) return true;
     
 
     if (!check.collisionCheck(bottomY, topY, rightX, leftX)) {
