@@ -19,6 +19,9 @@ this.varn = varn;
 this.allnodes = new FastMap()
 this.allNodes = new FastMap()
 }
+some(c) {
+ return this.allNodes.some(c)
+}
 clear() {
  this.allnodes.forEach((node)=>{
  var ind = node.vars.forEach(this.varn)
