@@ -324,7 +324,7 @@ PacketHandler.prototype.handleMessage = function (message) {
       break;
   }
   } catch (e) {
-    console.log("[WARN] Stopped crash at packethandler. Probably because of wrong packet/client . Usually normal.");
+    throw e
   }
 };
 
