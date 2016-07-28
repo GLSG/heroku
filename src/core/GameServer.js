@@ -802,7 +802,7 @@ beforeq(player) {
     }
 
     let nodes = this.getWorld().getPlayerNodes();
-    nodes.sorted(sorter);
+    nodes.allNodes.sorted(sorter);
     nodes.forEach((cell)=> {
       // Do not move cells that have already been eaten or have collision turned off
       if (!cell) {
