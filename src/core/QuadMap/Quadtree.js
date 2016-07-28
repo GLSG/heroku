@@ -310,7 +310,7 @@ compile(node,qtree) {
 }
 setnode(id,node) {
   
-  if (node.node.owner) node.node.owner.name = this.level + " | " + this.nodes.length + " | " + this.quads.length
+  // if (node.node.owner) node.node.owner.name = this.level + " | " + this.nodes.length + " | " + this.quads.length
   
 this.nodes.set(id,node);
  if (this.config.quadv) node.node[this.config.quadv] = this;
