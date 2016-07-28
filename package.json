@@ -12,8 +12,7 @@
     "glob": "7.0.3",
     "md5-file": "2.0.4",
     "request": "2.72.0",
-    "ws": "1.1.0",
-    "QuadMap": "1.4.8"
+    "ws": "1.1.0"
   },
   "devDependencies": {},
   "scripts": {
