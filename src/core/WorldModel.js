@@ -38,6 +38,7 @@ module.exports = class WorldModel {
     })
     this.nodes.addVar("virusNodes")
     this.nodes.addVar("ejectedNodes")
+    this.nodes.addVar("playerNodes")
     this.quadMap = {
       1: [],
       2: [],
@@ -46,7 +47,7 @@ module.exports = class WorldModel {
     };
    
     this.movingNodes = new SortedMap();
-    this.playerNodes = SortedMap();
+    this.playerNodes = this.nodes.playerNodes;
     this.virusNodes = this.nodes.virusNodes;
     this.rainbowNodes = SortedMap();
     this.ejectedNodes =  this.nodes.ejectedNodes;
