@@ -18,7 +18,7 @@ The AJS Dev Team.
 // among our processes.
 const Cell = require('../entity/Cell.js');
 const SortedMap = require("collections/fast-map");
-const QuadMap = require("QuadMap")
+const QuadMap = require("./QuadMap")
 
 
 
