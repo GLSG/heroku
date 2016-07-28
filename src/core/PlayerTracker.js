@@ -609,7 +609,7 @@ var box = {
   
 }
 var quad = this.gameServer.getWorld().getNodes().getQuadBox(box)
-this.name = quad.level + "  |  " + quad.nodes.length + "  |  " + quad.quads.length
+// this.name = quad.level + "  |  " + quad.nodes.length + "  |  " + quad.quads.length
 var nodes = quad.getNodes(true)
     var newVisible = [];
     nodes.forEach((node)=> {
