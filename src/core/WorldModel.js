@@ -31,7 +31,13 @@ module.exports = class WorldModel {
    
     this.lastNodeId = 2;    // todo why 2?
     this.nodes = new QuadMap(borderBottom,borderTop,borderLeft,borderRight);
-    
+    this.nodes.setQuadVar("QTree")
+    this.nodes.setTest(function(id,node) {
+      return (node.nodeId == 0) ? false : true
+      
+    })
+    this.nodes.addVar("virusNodes")
+    this.nodes.addVar("ejectedNodes")
     this.quadMap = {
       1: [],
       2: [],
@@ -41,9 +47,9 @@ module.exports = class WorldModel {
    
     this.movingNodes = new SortedMap();
     this.playerNodes = SortedMap();
-    this.virusNodes = SortedMap();
+    this.virusNodes = this.nodes.virusNodes;
     this.rainbowNodes = SortedMap();
-    this.ejectedNodes = new SortedMap();
+    this.ejectedNodes =  this.nodes.ejectedNodes;
   }
 
   setNode(id, node, type) {
