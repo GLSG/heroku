@@ -10,7 +10,7 @@ process.stdout.write("\u001b[2J\u001b[0;0H");
 // Handle arguments
 process.argv.forEach(function (val) {
   if (val == "--noconsole") {
-    showConsole = false;
+    showConsole = true;
   } else if (val == "--help") {
     console.log("Proper Usage: node index.js");
     console.log("    --noconsole         Disables the console");
