@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GLSG/heroku"
+    "url": "https://github.com/AJS-development/Ogar-unlimited"
   },
-  "author": "GODLIKE5",
+  "author": "AJS-development",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/GLSG/heroku/issues"
+    "url": "https://github.com/AJS-development/Ogar-unlimited/issues"
   },
-  "homepage": "https://GLSGBots.com"
+  "homepage": "https://github.com/AJS-development/Ogar-unlimited"
 }
