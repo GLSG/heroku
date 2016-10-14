@@ -1,5 +1,5 @@
 {
-  "name": "GLSG",
+  "name": "Ogar_Unlimited",
   "version": "17.0.0",
   "description": "Open source Agar.io server",
   "main": "src/index.js",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AJS-development/Ogar-unlimited"
+    "url": "https://github.com/GLSG/heroku"
   },
   "author": "GODLIKE5",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/AJS-development/Ogar-unlimited/issues"
+    "url": "https://github.com/GLSG/heroku/issues"
   },
-  "homepage": "https://github.com/AJS-development/Ogar-unlimited"
+  "homepage": "https://GLSGBots.com"
 }
