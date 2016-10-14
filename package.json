@@ -1,5 +1,5 @@
 {
-  "name": "Ogar-Unlimited",
+  "name": "Ogar_Unlimited",
   "version": "17.0.0",
   "description": "Open source Agar.io server",
   "main": "src/index.js",
